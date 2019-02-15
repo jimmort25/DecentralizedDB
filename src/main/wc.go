@@ -1,13 +1,13 @@
 package main
 
 import (
-	"log"
-	"unicode"
-	"strconv"
-	"strings"
 	"fmt"
+	"log"
 	"mapreduce"
 	"os"
+	"strconv"
+	"strings"
+	"unicode"
 )
 
 // The mapping function is called once for each piece of the input.
@@ -43,7 +43,7 @@ func reduceF(key string, values []string) string {
 		sum += val
 	}
 
-  return strconv.Itoa(sum)
+	return strconv.Itoa(sum)
 }
 
 // Can be run in 3 ways:
